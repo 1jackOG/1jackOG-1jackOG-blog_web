@@ -1,0 +1,65 @@
+html{
+    background-color: white;
+    max-width: 100vw;
+}
+.styles
+{
+    font-family: 'Fredoka One', cursive;
+    font-style: normal;
+}
+a
+{
+    text-decoration: none;
+    text-indent: 10rem;
+    color: #000;
+}
+.write
+{
+    margin: 0 auto;
+    width: 60%;
+    height: 40%;
+}
+p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.read
+{
+  float:right;
+  color: blue;
+}
+.read:hover{
+    color: #000;
+}
+input
+{
+    margin-right: 100%;
+    margin-bottom: 1%;
+}
+.delete_btn
+{
+    border-radius: 10px;
+    border: 1px solid white;
+}
+h3
+{
+    margin: 0;
+    display: inline-block;
+    font-weight: 400;
+    color: gray;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+.form-signin
+{
+    max-width: 380px;
+    padding: 15px
+}
+.image-container {
+    max-height:100px;
+    overflow:hidden;
+  }

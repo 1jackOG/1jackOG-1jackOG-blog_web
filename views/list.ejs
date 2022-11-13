@@ -1,0 +1,41 @@
+<%- include("header",{user:users.username})%>
+<div class="card text-bg-dark border border-0">
+  <img src="<%= users.profileIMG%>" class="d-block w-100" style="max-height:580px;overflow:hidden;" width="100%">
+  <div class="card-img-overlay">
+    <h5 class="card-title fw-bold"><%= users.username%></h5>
+    <button type="button" class="btn btn-light" style="float: right;" onclick="location.href ='/write/<%= users.username%>'">Wrtie Article</button>
+    <img src="<%= users.profileIMG%>" class="rounded-circle"  width="150px" height="150px" alt="USER IMAGE">
+    <p class="card-text fw-bold"><%=users.qoute%></p>
+    <p class="card-text fw-bold"><small>Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+<div class="container">
+
+</div>
+<div class="row">
+  <div class="col-9"><div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3 d-flex">
+    <% if(contents.length!=0){ contents.forEach(function(blog){ %>
+            <div class="col">
+              <div class="card m-2" style="width:350px;">
+                <img src="<%= blog.thumbnail%>" class="card-img-top"
+                  alt="Hollywood Sign on The Hill" />
+                <div class="card-body">
+                <h5 class="card-title text-truncate"><%= blog.title %></h5>
+                <p class="card-text"><%= blog.content.substring(0,180)%>
+                <a class="btn btn-dark" href="">Read More</a>
+                <h6 class="fw-light" href=""><%= users.username%></h6>
+                </p>
+                </div>
+              </div>
+            </div>
+    <%})}%>
+    </div></div>
+  <div class="col-3">
+    <div class="container text-center">
+      <h2>catogery</h2>
+    </div>
+  </div>
+</div>
+</div>
+<%- include("footer") -%>
