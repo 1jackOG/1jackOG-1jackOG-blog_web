@@ -11,7 +11,7 @@ const cloudinary = require('cloudinary').v2;
 const LocalStrategy = require('passport-local').Strategy;
 const passportLocalMongoose = require("passport-local-mongoose");
 const post = require('./Post');
-const contacts = ["Email : faizk650@gmail.com","Post Address : 315/3 house no 14","Phone : 4545343431"];
+const contacts = ["Email : faiz@gmail.com","Post Address : 315/3 house no 14","Phone : 4545343431"];
 var path = require('path');
 app.use(session({
     secret: "our",
